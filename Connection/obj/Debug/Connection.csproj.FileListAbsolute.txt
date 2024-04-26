@@ -5,3 +5,12 @@ C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Con
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.csproj.CoreCompileInputs.cache
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.dll
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.pdb
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\EntityFramework.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\System.Data.SQLite.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\EntityFramework.xml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\System.Data.SQLite.xml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.csproj.CopyComplete

@@ -11,12 +11,12 @@ namespace Connection
     public interface IServiceConnection
     {
         [OperationContract]
-        bool CheckUser(string name, string password);
+        bool CheckUser(string username, string password);
 
         [OperationContract]
-        bool CheckUserExists(string name);
+        bool CheckUserExists(string username);
 
         [OperationContract]
-        void AddNewUserInDB(string name, string password);
+        void AddNewUserInDB(string username, string password);
     }
 }

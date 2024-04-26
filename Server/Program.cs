@@ -21,9 +21,9 @@ namespace Server
                 var serviceAddress = "localhost:8301";
                 var serviceName = "MyService";
 
-                var host = new ServiceHost(typeof(ServiceConnect), new Uri($"net.tcp://{serviceAddress}/{serviceName}"));
+                var host = new ServiceHost(typeof(ServiceConnection), new Uri($"net.tcp://{serviceAddress}/{serviceName}"));
                 var serverBinding = new NetTcpBinding();
-                host.AddServiceEndpoint(typeof(IServiceConnect), serverBinding, "");
+                host.AddServiceEndpoint(typeof(IServiceConnection), serverBinding, "");
 
                 host.Open();
                 Connect.Write("The host is connected.");

@@ -1,0 +1,7 @@
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\Connection.dll.config
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\Connection.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\bin\Debug\Connection.pdb
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.csproj.AssemblyReference.cache
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.csproj.CoreCompileInputs.cache
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\Connection\obj\Debug\Connection.pdb

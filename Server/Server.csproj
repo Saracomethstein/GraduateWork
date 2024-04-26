@@ -72,9 +72,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Connect\Connect.csproj">
-      <Project>{9E82B4C5-0F58-4392-A2E4-FEE53B686855}</Project>
-      <Name>Connect</Name>
+    <ProjectReference Include="..\Connection\Connection.csproj">
+      <Project>{e7dface3-3f1d-47c8-bbd5-fcc75e28373c}</Project>
+      <Name>Connection</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

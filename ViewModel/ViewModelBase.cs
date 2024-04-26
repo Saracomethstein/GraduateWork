@@ -10,7 +10,7 @@ namespace LearnCSharp.ViewModel
 {
     internal class ViewModelBase : INotifyPropertyChanged
     {
-        public static IServiceConnect Service;
+        public static IServiceConnection Service;
 
         public ViewModelBase()
         {
@@ -20,7 +20,7 @@ namespace LearnCSharp.ViewModel
             Uri tcpUri = new Uri($"net.tcp://{serviceAddress}/{serviceName}");
             EndpointAddress address = new EndpointAddress(tcpUri);
             NetTcpBinding clientBinding = new NetTcpBinding();
-            ChannelFactory<IServiceConnect> factory = new ChannelFactory<IServiceConnect>(clientBinding, address);
+            ChannelFactory<IServiceConnection> factory = new ChannelFactory<IServiceConnection>(clientBinding, address);
             Service = factory.CreateChannel();
         }
 

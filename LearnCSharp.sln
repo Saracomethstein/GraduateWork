@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnCSharp", "LearnCSharp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{90FBD335-3776-41B5-8562-FBBA8850CC88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect", "..\Connect\Connect.csproj", "{9E82B4C5-0F58-4392-A2E4-FEE53B686855}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connection", "Connection\Connection.csproj", "{E7DFACE3-3F1D-47C8-BBD5-FCC75E28373C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{90FBD335-3776-41B5-8562-FBBA8850CC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90FBD335-3776-41B5-8562-FBBA8850CC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90FBD335-3776-41B5-8562-FBBA8850CC88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E82B4C5-0F58-4392-A2E4-FEE53B686855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E82B4C5-0F58-4392-A2E4-FEE53B686855}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E82B4C5-0F58-4392-A2E4-FEE53B686855}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E82B4C5-0F58-4392-A2E4-FEE53B686855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DFACE3-3F1D-47C8-BBD5-FCC75E28373C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DFACE3-3F1D-47C8-BBD5-FCC75E28373C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DFACE3-3F1D-47C8-BBD5-FCC75E28373C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DFACE3-3F1D-47C8-BBD5-FCC75E28373C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

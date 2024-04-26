@@ -1,0 +1,89 @@
+﻿<Window x:Class="LearnCSharp.View.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearnCSharp.ViewModel"
+        mc:Ignorable="d"
+        Title="RegistrationWindow"
+        Height="400"
+        Width="450"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        WindowStyle="None">
+
+    <Window.DataContext>
+        <local:RegistrationWindowViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Label Content="Add new user..."
+               FontFamily="Helvetica"
+               FontSize="24"
+               FontWeight="Bold"
+               Width="200"
+               Height="50"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Center"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               Margin="0,42,0,0"
+               />
+
+        <Label Content="username"
+               FontFamily="Helvetica"
+               FontSize="14"
+               Width="100"
+               Height="30"
+               HorizontalContentAlignment="Left"
+               VerticalContentAlignment="Center"
+               Margin="131,117,219,253"/>
+
+        <Label Content="password"
+               FontFamily="Helvetica"
+               FontSize="14"
+               Width="100"
+               Height="30"
+               HorizontalContentAlignment="Left"
+               VerticalContentAlignment="Center"
+               Margin="131,189,219,181"/>
+
+        <TextBox Text="{Binding NewUser}"
+                 FontFamily="Helvetica"
+                 FontSize="24"
+                 Width="200"
+                 Height="40"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 Margin="125,147,125,213"/>
+
+        <TextBox Text="{Binding NewPassword}"
+                 FontFamily="Helvetica"
+                 FontSize="24"
+                 Width="200"
+                 Height="40"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 Margin="125,219,125,141"/>
+
+        <Button Content="Registarion"
+                Width="170"
+                Height="40"
+                Margin="140,286,140,74"
+                Command="{Binding RegintationRegistrationCommand}"/>
+
+        <Label Content="LearnCSharp"
+               Width="420"
+               Height="30"
+               HorizontalContentAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="0,0,30,370"
+               Background="#dddddd"/>
+
+        <Button Content="x"
+                Width="30"
+                Height="30"
+                Margin="420,0,0,370"
+                Command="{Binding CloseCommand}"/>
+    </Grid>
+</Window>

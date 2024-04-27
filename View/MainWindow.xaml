@@ -3,10 +3,124 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LearnCSharp"
+        xmlns:local="clr-namespace:LearnCSharp.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        WindowStyle="None"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+
     <Grid>
-        
+
+        <ToolBarTray Orientation="Vertical">
+            <ToolBar Height="1050" VerticalAlignment="Top" Margin="0,30,0,0">
+
+                <Button Content="Lectures"
+                        Width="50"
+                        Height="30"/>
+
+                <Button Content="Profile"
+                        Width="50"
+                        Height="30"/>
+
+                <Label Content=""
+                       Height="930"/>
+
+                <Button Content="LogOut"
+                        Width="50"
+                        Height="30"
+                        Command="{Binding LogOutCommand}"/>
+            </ToolBar>
+        </ToolBarTray>
+
+        <StackPanel Orientation="Vertical"
+                    Height="1050"
+                    VerticalAlignment="Top"
+                    Margin="85,30,20,0">
+
+            <Label Content="Lectures List"
+                   Width="1885"
+                   Height="50"
+                   VerticalAlignment="Top"
+                   VerticalContentAlignment="Center"
+                   HorizontalContentAlignment="Center"/>
+
+            <Button Content="Lecture #1"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #2"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #3"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #4"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #5"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #6"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #7"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #8"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #9"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+            <Button Content="Lecture #10"
+                    Width="1885"
+                    Height="50"
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Left"/>
+
+        </StackPanel>
+
+        <Label Content="LearnCSharp"
+               Height="30"
+               HorizontalContentAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="0,0,0,0"
+               Background="#dddddd"/>
+
+        <Button Content="x"
+                Width="30"
+                Height="30"
+                Margin="1890,0,0,1050"
+                Command="{Binding CloseCommand}"
+                RenderTransformOrigin="15.233,-2.533"/>
+
     </Grid>
 </Window>

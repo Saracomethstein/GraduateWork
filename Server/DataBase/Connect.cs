@@ -6,7 +6,6 @@ namespace Server.DataBase
     internal class Connect
     {
         public const string filePath = @"C:\ProgramData\TestDataBase.db";
-        /*public const string filePath = @"C:\ProgramData\LearnCSharpData.db";*/
 
         public static SQLiteConnection connection = new SQLiteConnection($"Data Source = {filePath}; Version = 3; New = True; Compress = True;");
 

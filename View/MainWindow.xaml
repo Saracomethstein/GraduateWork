@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnCSharp.ViewModel"
+        xmlns:localc="clr-namespace:LearnCSharp.View"
         mc:Ignorable="d"
         Title="MainWindow"
         WindowStyle="None"
@@ -15,73 +16,81 @@
     </Window.DataContext>
 
     <Grid>
-        <StackPanel Width="100"
+        <StackPanel Width="120"
                     Orientation="Vertical"
                     HorizontalAlignment="Left">
             <Menu Height="1000"
                   VerticalAlignment="Top"
                   Margin="0,30,0,0">
 
-                <MenuItem Header="icon ///"
-                          FontSize="16">
+                <MenuItem Header="Lectures"
+                          FontSize="17"
+                          Width="120"
+                          Height="40">
                     <MenuItem.Icon>
                         <Image Source="/View/Logo/icons8-book-48.png"/>
                     </MenuItem.Icon>
 
-                    <MenuItem Header="Lect One"/>
-                    <MenuItem Header="lect Two"/>
-                    <MenuItem Header="Lect Three"/>
+                    <MenuItem Header="Lect #1"/>
+
+                    <MenuItem Header="lect #2"/>
+                    <MenuItem Header="Lect #3"/>
                 </MenuItem>
 
 
-                <MenuItem Header="icon Prac"
-                          FontSize="16">
+                <MenuItem Header="Practice"
+                          FontSize="17"
+                          Width="120"
+                          Height="40">
 
                     <MenuItem.Icon>
                         <Image Source="/View/Logo/icons8-code-48.png"/>
                     </MenuItem.Icon>
-                    
-                    <MenuItem Header="Prac One"/>
-                    <MenuItem Header="Prac Two"/>
-                    <MenuItem Header="Prac Three"/>
+
+                    <MenuItem Header="Prac #1"/>
+                    <MenuItem Header="Prac #2"/>
+                    <MenuItem Header="Prac #3"/>
                 </MenuItem>
 
                 <MenuItem Header="Profile"
-                          FontSize="16">
+                          FontSize="17"
+                          Width="120"
+                          Height="40">
 
                     <MenuItem.Icon>
                         <Image Source="/View/Logo/icons8-administrator-male-25.png"/>
                     </MenuItem.Icon>
-                    
-                </MenuItem>
 
+                </MenuItem>
             </Menu>
 
             <Menu Height="50"
                   VerticalAlignment="Top">
-
                 <MenuItem Header="LogOut"
-                          FontSize="16"
+                          FontSize="17"
+                          Width="120"
+                          Height="40"
                           Command="{Binding LogOutCommand}">
-                    
+
                     <MenuItem.Icon>
                         <Image Source="/View/Logo/icons8-logout-30.png"/>
                     </MenuItem.Icon>
-                    
-                </MenuItem>
 
+                </MenuItem>
             </Menu>
         </StackPanel>
-        
-        
+
+
 
         <Label Content="LearnCSharp"
                Height="30"
                HorizontalContentAlignment="Left"
+               VerticalContentAlignment="Center"
                VerticalAlignment="Top"
                Margin="0,0,0,0"
                Background="#dddddd"
-               FontSize="14"/>
+               FontSize="17"
+               FontFamily="Helvetica"/>
 
         <Button Width="30"
                 Height="30"
@@ -91,5 +100,8 @@
             <Image Source="/View/Logo/icons8-close-32.png"/>
         </Button>
 
+        <ListView Margin="120, 30, 0, 0">
+            <local:UserControl1 Width="1780" Height="1050"/>
+        </ListView>
     </Grid>
 </Window>

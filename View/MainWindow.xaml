@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnCSharp.ViewModel"
-        xmlns:localc="clr-namespace:LearnCSharp.View"
         mc:Ignorable="d"
         Title="MainWindow"
         WindowStyle="None"
@@ -31,8 +30,9 @@
                         <Image Source="/View/Logo/icons8-book-48.png"/>
                     </MenuItem.Icon>
 
-                    <MenuItem Header="Lect #1"/>
-
+                    <Button Content="Lect #1"
+                            Width="120"
+                            Command="{Binding OpenLect1}"/>
                     <MenuItem Header="lect #2"/>
                     <MenuItem Header="Lect #3"/>
                 </MenuItem>
@@ -100,8 +100,9 @@
             <Image Source="/View/Logo/icons8-close-32.png"/>
         </Button>
 
-        <ListView Margin="120, 30, 0, 0">
-            <local:UserControl1 Width="1780" Height="1050"/>
-        </ListView>
+        <Frame Content="{Binding CurrentPage}"
+               Margin="120, 30, 0, 0"
+               NavigationUIVisibility="Hidden"/>
+            
     </Grid>
 </Window>

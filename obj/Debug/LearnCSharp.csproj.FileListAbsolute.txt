@@ -68,5 +68,7 @@ C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\LearnCSharp.cs
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\LearnCSharp.csproj.CopyComplete
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\LearnCSharp.exe
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\LearnCSharp.pdb
-C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\ViewModel\UserControl1.g.cs
-C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\ViewModel\UserControl1.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lectures1.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\List.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lectures1.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\List.baml

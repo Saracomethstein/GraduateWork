@@ -149,6 +149,15 @@
       <Name>Connection</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Logo\icons8-close-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\Logo\icons8-administrator-male-25.png" />
+    <Resource Include="View\Logo\icons8-book-48.png" />
+    <Resource Include="View\Logo\icons8-code-48.png" />
+    <Resource Include="View\Logo\icons8-logout-30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

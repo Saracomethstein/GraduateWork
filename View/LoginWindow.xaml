@@ -86,11 +86,12 @@
                Margin="0,0,30,370"
                Background="#dddddd"/>
 
-        <Button Content="x"
-                Width="30"
+        <Button Width="30"
                 Height="30"
                 Margin="420,0,0,370"
-                Command="{Binding CloseCommand}"/>
+                Command="{Binding CloseCommand}">
+            <Image Source="/View/Logo/icons8-close-32.png"/>
+        </Button>
 
     </Grid>
 </Window>

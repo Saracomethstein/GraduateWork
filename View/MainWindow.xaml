@@ -15,46 +15,81 @@
     </Window.DataContext>
 
     <Grid>
-        <StackPanel Width="60"
+        <StackPanel Width="100"
                     Orientation="Vertical"
                     HorizontalAlignment="Left">
-            <Menu Height="1050"
+            <Menu Height="1000"
                   VerticalAlignment="Top"
                   Margin="0,30,0,0">
 
-                <MenuItem Header="icon ///">
-                    
+                <MenuItem Header="icon ///"
+                          FontSize="16">
+                    <MenuItem.Icon>
+                        <Image Source="/View/Logo/icons8-book-48.png"/>
+                    </MenuItem.Icon>
+
                     <MenuItem Header="Lect One"/>
-
                     <MenuItem Header="lect Two"/>
-
                     <MenuItem Header="Lect Three"/>
-
                 </MenuItem>
 
-                <MenuItem Header="icon Prac"/>
 
-                <MenuItem Header="Profile"/>
+                <MenuItem Header="icon Prac"
+                          FontSize="16">
 
-                <MenuItem Header="LogOut"/>
-                
+                    <MenuItem.Icon>
+                        <Image Source="/View/Logo/icons8-code-48.png"/>
+                    </MenuItem.Icon>
+                    
+                    <MenuItem Header="Prac One"/>
+                    <MenuItem Header="Prac Two"/>
+                    <MenuItem Header="Prac Three"/>
+                </MenuItem>
+
+                <MenuItem Header="Profile"
+                          FontSize="16">
+
+                    <MenuItem.Icon>
+                        <Image Source="/View/Logo/icons8-administrator-male-25.png"/>
+                    </MenuItem.Icon>
+                    
+                </MenuItem>
+
             </Menu>
-            
+
+            <Menu Height="50"
+                  VerticalAlignment="Top">
+
+                <MenuItem Header="LogOut"
+                          FontSize="16"
+                          Command="{Binding LogOutCommand}">
+                    
+                    <MenuItem.Icon>
+                        <Image Source="/View/Logo/icons8-logout-30.png"/>
+                    </MenuItem.Icon>
+                    
+                </MenuItem>
+
+            </Menu>
         </StackPanel>
+        
+        
 
         <Label Content="LearnCSharp"
                Height="30"
                HorizontalContentAlignment="Left"
                VerticalAlignment="Top"
                Margin="0,0,0,0"
-               Background="#dddddd"/>
+               Background="#dddddd"
+               FontSize="14"/>
 
-        <Button Content="x"
-                Width="30"
+        <Button Width="30"
                 Height="30"
                 Margin="1890,0,0,1050"
                 Command="{Binding CloseCommand}"
-                RenderTransformOrigin="15.233,-2.533"/>
+                RenderTransformOrigin="15.233,-2.533">
+            <Image Source="/View/Logo/icons8-close-32.png"/>
+        </Button>
 
     </Grid>
 </Window>

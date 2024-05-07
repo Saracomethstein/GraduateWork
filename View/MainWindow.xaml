@@ -15,27 +15,32 @@
     </Window.DataContext>
 
     <Grid>
+        <StackPanel Width="60"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Left">
+            <Menu Height="1050"
+                  VerticalAlignment="Top"
+                  Margin="0,30,0,0">
 
-        <ToolBarTray Orientation="Vertical">
-            <ToolBar Height="1050" VerticalAlignment="Top" Margin="0,30,0,0">
+                <MenuItem Header="icon ///">
+                    
+                    <MenuItem Header="Lect One"/>
 
-                <Button Content="Lectures"
-                        Width="50"
-                        Height="30"/>
+                    <MenuItem Header="lect Two"/>
 
-                <Button Content="Profile"
-                        Width="50"
-                        Height="30"/>
+                    <MenuItem Header="Lect Three"/>
 
-                <Label Content=""
-                       Height="930"/>
+                </MenuItem>
 
-                <Button Content="LogOut"
-                        Width="50"
-                        Height="30"
-                        Command="{Binding LogOutCommand}"/>
-            </ToolBar>
-        </ToolBarTray>
+                <MenuItem Header="icon Prac"/>
+
+                <MenuItem Header="Profile"/>
+
+                <MenuItem Header="LogOut"/>
+                
+            </Menu>
+            
+        </StackPanel>
 
         <Label Content="LearnCSharp"
                Height="30"

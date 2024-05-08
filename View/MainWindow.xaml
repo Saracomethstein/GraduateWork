@@ -30,10 +30,9 @@
                         <Image Source="/View/Logo/icons8-book-48.png"/>
                     </MenuItem.Icon>
 
-                    <MenuItem Header="List"
-                              Command="{Binding OpenList}"/>
+                    <MenuItem Header="List"/>
 
-                    <MenuItem Header="Lect #1" 
+                    <MenuItem Header="Variables and const" 
                               Command="{Binding OpenLect1}"/>
                     
                     <MenuItem Header="lect #2"

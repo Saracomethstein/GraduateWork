@@ -3,29 +3,74 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:LearnCSharp.View.Pages"
+      xmlns:local="clr-namespace:LearnCSharp.ViewModel"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
       Title="Lectures1">
 
+    <Page.DataContext>
+        <local:Lect1ViewModel/>
+    </Page.DataContext>
+
     <Grid Background="White">
-        <TextBlock Text="Hello World!"
-                   FontSize="25"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Переменные и константы"
+                       Height="40"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Text="Для хранения данных в программе применяются переменные. Переменная представляет именнованную область памяти, в которой хранится значение определенного типа. Переменная имеет тип, имя и значение. Тип определяет, какого рода информацию может хранить переменная."/>
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Text="Перед использованием любую переменную надо определить. Синтаксис определения переменной выглядит следующим образом:"/>
 
-        <Button Content="Prev Lectures"
-                Height="30"
-                Width="200"
-                VerticalAlignment="Bottom"
-                HorizontalAlignment="Left"
-                Margin="10"/>
+                <Border BorderThickness="1"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="10">
+                        <Run>1</Run>
+                        <Run Foreground="Green"
+                         FontWeight="Bold">|</Run>
+                        <Run>тип имя_переменной;</Run>
+                    </TextBlock>
+                </Border>
 
-        <Button Content="Next Lectures"
-                Height="30"
-                Width="200"
-                VerticalAlignment="Bottom"
-                HorizontalAlignment="Right"
-                Margin="10"/>
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Text="Вначале идет тип переменной, потом ее имя. В качестве имени переменной может выступать любое произвольное название, которое удовлетворяет следующим требованиям:"/>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="20">
+                    <Run Foreground="Black"
+                         FontWeight="Bold">•</Run>
+                    <Run>имя может содержать любые цифры, буквы и символ подчеркивания, при этом первый символ в имени должен быть буквой или символом подчеркивания;</Run>
+                    
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="20">
+                    <Run Foreground="Black"
+                         FontWeight="Bold">•</Run>
+                    <Run>в имени не должно быть знаков пунктуации и пробелов</Run>
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="20">
+                    <Run Foreground="Black"
+                         FontWeight="Bold">•</Run>
+                    <Run>имя не может быть ключевым словом языка C#. Таких слов не так много, и при работе в Visual Studio среда разработки подсвечивает ключевые слова синим цветом.</Run>
+                </TextBlock>
+
+
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

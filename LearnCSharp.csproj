@@ -77,8 +77,10 @@
     </ApplicationDefinition>
     <Compile Include="Model\RelayCommand.cs" />
     <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="ViewModel\Lect1ViewModel.cs" />
     <Compile Include="ViewModel\LoginWindowViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\PageViewModel.cs" />
     <Compile Include="ViewModel\RegistrationWindowViewModel.cs" />
     <Compile Include="ViewModel\UserInfoViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
@@ -90,9 +92,6 @@
     </Compile>
     <Compile Include="View\Pages\Lectures1.xaml.cs">
       <DependentUpon>Lectures1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Pages\List.xaml.cs">
-      <DependentUpon>List.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Pages\Prac1.xaml.cs">
       <DependentUpon>Prac1.xaml</DependentUpon>
@@ -137,10 +136,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Pages\Lectures1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Pages\List.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

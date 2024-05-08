@@ -18,7 +18,6 @@ namespace LearnCSharp.ViewModel
         private Page _currentPage;
 
         #region Pages
-        private Page List;
         private Page Lecture1;
         private Page Lecture2;
         private Page Lecture3;
@@ -40,12 +39,9 @@ namespace LearnCSharp.ViewModel
 
         public MainWindowViewModel()
         {
-            List = new List();
             Lecture1 = new Lectures1();
             Lecture2 = new Lecture2();
             Lecture3 = new Lecture3();
-
-            CurrentPage = List;
         }
 
 
@@ -79,14 +75,6 @@ namespace LearnCSharp.ViewModel
         #endregion
 
         #region PageCommands
-        public RelayCommand OpenList
-        {
-            get
-            {
-                return new RelayCommand(() => CurrentPage = List);
-            }
-        }
-
         public RelayCommand OpenLect1
         {
             get

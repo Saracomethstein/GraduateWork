@@ -30,11 +30,17 @@
                         <Image Source="/View/Logo/icons8-book-48.png"/>
                     </MenuItem.Icon>
 
-                    <Button Content="Lect #1"
-                            Width="120"
-                            Command="{Binding OpenLect1}"/>
-                    <MenuItem Header="lect #2"/>
-                    <MenuItem Header="Lect #3"/>
+                    <MenuItem Header="List"
+                              Command="{Binding OpenList}"/>
+
+                    <MenuItem Header="Lect #1" 
+                              Command="{Binding OpenLect1}"/>
+                    
+                    <MenuItem Header="lect #2"
+                              Command="{Binding OpenLect2}"/>
+                    
+                    <MenuItem Header="Lect #3"
+                              Command="{Binding OpenLect3}"/>
                 </MenuItem>
 
 
@@ -47,9 +53,14 @@
                         <Image Source="/View/Logo/icons8-code-48.png"/>
                     </MenuItem.Icon>
 
-                    <MenuItem Header="Prac #1"/>
-                    <MenuItem Header="Prac #2"/>
-                    <MenuItem Header="Prac #3"/>
+                    <MenuItem Header="Prac #1"
+                              Command="{Binding OpenPrac1}"/>
+                    
+                    <MenuItem Header="Prac #2"
+                              Command="{Binding OpenPrac2}"/>
+                    
+                    <MenuItem Header="Prac #3"
+                              Command="{Binding OpenPeac3}"/>
                 </MenuItem>
 
                 <MenuItem Header="Profile"

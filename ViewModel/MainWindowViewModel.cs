@@ -17,8 +17,15 @@ namespace LearnCSharp.ViewModel
         private RelayCommand _logOutCommand;
         private Page _currentPage;
 
+        #region Pages
         private Page List;
         private Page Lecture1;
+        private Page Lecture2;
+        private Page Lecture3;
+
+        private Page Prac1;
+        private Page Prac2;
+        private Page Prac3;
 
         public Page CurrentPage
         {
@@ -29,11 +36,14 @@ namespace LearnCSharp.ViewModel
                 NotifyPropertyChanged(nameof(CurrentPage));
             }
         }
+        #endregion
 
         public MainWindowViewModel()
         {
             List = new List();
             Lecture1 = new Lectures1();
+            Lecture2 = new Lecture2();
+            Lecture3 = new Lecture3();
 
             CurrentPage = List;
         }
@@ -60,6 +70,23 @@ namespace LearnCSharp.ViewModel
                 Application.Current.Shutdown();
             }));
 
+        public RelayCommand LogOutCommand
+            => _logOutCommand ?? (_logOutCommand = new RelayCommand(() =>
+            {
+                // Need add func for logout person // 
+                GetLoginWindow();
+            }));
+        #endregion
+
+        #region PageCommands
+        public RelayCommand OpenList
+        {
+            get
+            {
+                return new RelayCommand(() => CurrentPage = List);
+            }
+        }
+
         public RelayCommand OpenLect1
         {
             get
@@ -68,12 +95,45 @@ namespace LearnCSharp.ViewModel
             }
         }
 
-        public RelayCommand LogOutCommand
-            => _logOutCommand ?? (_logOutCommand = new RelayCommand(() =>
+        public RelayCommand OpenLect2
+        {
+            get
             {
-                // Need add func for logout person // 
-                GetLoginWindow();
-            }));
+                return new RelayCommand(() => CurrentPage = Lecture2);
+            }
+        }
+
+        public RelayCommand OpenLect3
+        {
+            get
+            {
+                return new RelayCommand(() => CurrentPage = Lecture3);
+            }
+        }
+
+        public RelayCommand OpenPrac1
+        {
+            get
+            {
+                return new RelayCommand(() => CurrentPage = Prac1);
+            }
+        }
+
+        public RelayCommand OpenPrac2
+        {
+            get
+            {
+                return new RelayCommand(() => CurrentPage = Prac2);
+            }
+        }
+
+        public RelayCommand OpenPeac3
+        {
+            get
+            {
+                return new RelayCommand(() => CurrentPage = Prac3);
+            }
+        }
         #endregion
     }
 }

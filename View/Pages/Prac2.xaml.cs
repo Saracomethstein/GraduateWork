@@ -15,9 +15,12 @@ using System.Windows.Shapes;
 
 namespace LearnCSharp.View.Pages
 {
-    public partial class List : Page
+    /// <summary>
+    /// Логика взаимодействия для Prac2.xaml
+    /// </summary>
+    public partial class Prac2 : Page
     {
-        public List()
+        public Prac2()
         {
             InitializeComponent();
         }

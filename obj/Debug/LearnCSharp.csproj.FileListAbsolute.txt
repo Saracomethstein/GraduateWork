@@ -72,3 +72,13 @@ C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lec
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\List.g.cs
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lectures1.baml
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\List.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lecture2.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lecture3.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lecture2.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Lecture3.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac1.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac2.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac3.g.cs
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac1.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac2.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac3.baml

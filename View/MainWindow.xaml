@@ -30,8 +30,6 @@
                         <Image Source="/View/Logo/icons8-book-48.png"/>
                     </MenuItem.Icon>
 
-                    <MenuItem Header="List"/>
-
                     <MenuItem Header="Variables and const" 
                               Command="{Binding OpenLect1}"/>
                     

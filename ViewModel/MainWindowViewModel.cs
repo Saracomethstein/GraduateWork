@@ -42,6 +42,9 @@ namespace LearnCSharp.ViewModel
             Lecture1 = new Lectures1();
             Lecture2 = new Lecture2();
             Lecture3 = new Lecture3();
+            Prac1 = new Prac1();
+            Prac2 = new Prac2();
+            Prac3 = new Prac3();
         }
 
 

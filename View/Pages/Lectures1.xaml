@@ -20,21 +20,24 @@
                        Height="40"
                        FontSize="20"
                        FontWeight="Bold"/>
+                
                 <TextBlock TextWrapping="Wrap"
                            FontSize="18"
                            Text="Для хранения данных в программе применяются переменные. Переменная представляет именнованную область памяти, в которой хранится значение определенного типа. Переменная имеет тип, имя и значение. Тип определяет, какого рода информацию может хранить переменная."/>
+               
                 <TextBlock TextWrapping="Wrap"
                            FontSize="18"
                            Text="Перед использованием любую переменную надо определить. Синтаксис определения переменной выглядит следующим образом:"/>
 
-                <Border BorderThickness="1"
+                <!--// Code //-->
+                <Border BorderThickness="0.5"
                         BorderBrush="Gray"
                         Margin="15">
                     <TextBlock TextWrapping="Wrap"
                            FontSize="18"
-                           Margin="10">
+                           Margin="3">
                         <Run>1</Run>
-                        <Run Foreground="Green"
+                        <Run Foreground="LawnGreen"
                          FontWeight="Bold">|</Run>
                         <Run>тип имя_переменной;</Run>
                     </TextBlock>
@@ -69,6 +72,285 @@
                     <Run>имя не может быть ключевым словом языка C#. Таких слов не так много, и при работе в Visual Studio среда разработки подсвечивает ключевые слова синим цветом.</Run>
                 </TextBlock>
 
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Хотя имя переменой может быть любым, но следует давать переменным описательные имена, которые будут говорить об их предназначении.</Run>
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="0,10,0,0">
+                    <Run>Например, определим простейшую переменную:</Run>
+                </TextBlock>
+                
+                <!--// Code //-->
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">string</Run>
+                        <Run>name;</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>В данном случае определена переменная name, которая имеет тип</Run>
+                    <Run FontWeight="Bold">string,</Run>
+                    <Run>то есть переменная представляет строку. Поскольку определение переменной представляет собой инструкцию, то после него ставится точка с запятой.</Run>
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="0,10,0,0">
+                    <Run>При этом следует учитывать, что C# является регистрозависимым языком, поэтому следующие два определения переменных будут представлять две разные переменные:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">string</Run>
+                        <Run>name;</Run>
+                        <LineBreak/>
+                        <Run>2</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">string</Run>
+                        <Run>Name;</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>После определения переменной можно присвоить некоторое значение:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">string</Run>
+                        <Run>name;</Run>
+                        <LineBreak/>
+                        <Run>2</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run>name =</Run>
+                        <Run Foreground="Red">"Tom"</Run>
+                        <Run>;</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Так как переменная name представляет тип string, то есть строку, то мы можем присвоить ей строку в двойных кавычках. Причем переменной можно присвоить только то значение, которое соответствует ее типу.</Run>
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <LineBreak/>
+                    <Run>В дальнейшем с помощью имени переменной мы сможем обращаться к той области памяти, в которой хранится ее значение.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Также мы можем сразу при определении присвоить переменной значение. Данный прием называется инициализацией:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">string</Run>
+                        <Run>name =</Run>
+                        <Run Foreground="Red">"Tom"</Run>
+                        <Run>;</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Отличительной чертой переменных является то, что в программе можно многократно менять их значение. Например, создадим небольшую программу, в которой определим переменную, поменяем ее значение и выведем его на консоль:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">string</Run>
+                        <Run>name =</Run>
+                        <Run Foreground="Red">"Tom"</Run>
+                        <Run>;</Run>
+                        <Run Foreground="Green">    // определяем переменную и инициализируем ее</Run>
+                        <LineBreak/>
+                        <Run>2</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <LineBreak/>
+                        <Run>3</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run>Console.WriteLine(name);</Run>
+                        <Run Foreground="Green">    // Tom</Run>
+                        <LineBreak/>
+                        <Run>4</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <LineBreak/>
+                        <Run>5</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run>name =</Run>
+                        <Run Foreground="Red">"Bob"</Run>
+                        <Run>;</Run>
+                        <Run Foreground="Green">// меняем значение переменной</Run>
+                        <LineBreak/>
+                        <Run>6</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run>Console.WriteLine(name);</Run>
+                        <Run Foreground="Green">    // Bob</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Консольный вывод программы:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Black"
+                        Margin="15"
+                        Background="Black">
+                    <TextBlock TextWrapping="Wrap"
+                               FontSize="18"
+                               Margin="3">
+                        <Run Foreground="White">Tom</Run>
+                        <LineBreak/>
+                        <Run Foreground="White">Bob</Run>
+                    </TextBlock>
+                </Border>
+
+                <Label Content="Константы"
+                       Height="40"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Отличительной особенностью переменных является то, что мы можем изменить их значение в процессе работы программы. Но, кроме того, в C# есть константы.</Run>
+                    <Run FontWeight="Bold">Константа</Run>
+                    <Run>должна быть обязательно инициализирована при определении, и после определения значение константы не может быть изменено.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>Константы предназначены для описания таких значений, которые не должны изменяться в программе. Для определения констант используется ключевое слово</Run>
+                    <Run FontWeight="Bold">const,</Run>
+                    <Run>которое указывается перед типом константы:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">const string</Run>
+                        <Run>NAME =</Run>
+                        <Run Foreground="Red">"Tom"</Run>
+                        <Run>;</Run>
+                        <Run Foreground="Green">// определяем константу</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Так, в данном случае определена константа NAME, которая хранит строку "Tom". Нередко для название констант используется верхний регистр, но это не более чем условность.</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run>При использовании констант надо помнить, что объявить мы их можем только один раз и что к моменту компиляции они должны быть определены. Так, в следующем случае мы получим ошибку, так как константе не присвоено начальное значение:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">const string</Run>
+                        <Run>NAME;</Run>
+                        <Run Foreground="Green">// ! Ошибка - константа NAME не инициализирована</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Кроме того, мы ее не сможем изменить в процессе работы программы:</Run>
+                </TextBlock>
+
+                <Border BorderThickness="0.5"
+                        BorderBrush="Gray"
+                        Margin="15">
+                    <TextBlock TextWrapping="Wrap"
+                           FontSize="18"
+                           Margin="3">
+                        <Run>1</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run Foreground="DeepSkyBlue">const string</Run>
+                        <Run>NAME =</Run>
+                        <Run Foreground="Red">"Tom"</Run>
+                        <Run>;</Run>
+                        <Run Foreground="Green">// определяем константу</Run>
+                        <LineBreak/>
+                        <Run>2</Run>
+                        <Run Foreground="LawnGreen"
+                         FontWeight="Bold">|</Run>
+                        <Run>NAME =</Run>
+                        <Run Foreground="Red">"Bob"</Run>
+                        <Run>;</Run>
+                        <Run Foreground="Green">// !Ошибка - у констаты нельзя изменить значение</Run>
+                    </TextBlock>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap"
+                           FontSize="18">
+                    <Run>Таким образом, если нам надо хранить в программе некоторые данные, но их не следует изменить, они определяются в виде констант. Если же их можно изменять, то они определяются в виде переменных.</Run>
+                        <LineBreak/>
+                        <LineBreak/>
+                </TextBlock>
+
+                <Button Content="Next lecture"
+                        Height="40"/>
 
             </StackPanel>
         </ScrollViewer>

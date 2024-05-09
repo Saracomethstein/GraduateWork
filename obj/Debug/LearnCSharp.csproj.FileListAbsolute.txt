@@ -80,3 +80,6 @@ C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Pra
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac1.baml
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac2.baml
 C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\obj\Debug\View\Pages\Prac3.baml
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\bin\Debug\ICSharpCode.TextEditor.dll
+C:\Users\adels\OneDrive\Desktop\All\Dev\C#\GraduateWork\bin\Debug\ICSharpCode.AvalonEdit.xml

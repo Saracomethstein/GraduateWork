@@ -89,8 +89,7 @@ namespace Client.Model
                 _canExecute = canExecute;
         }
 
-        #region Члены ICommand
-
+        #region ICommand Members
         public event EventHandler CanExecuteChanged
         {
             add
@@ -116,7 +115,6 @@ namespace Client.Model
         {
             _execute();
         }
-
         #endregion
     }
 }

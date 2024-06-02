@@ -9,15 +9,13 @@ namespace Server.DataBase
 
         public static SQLiteConnection connection = new SQLiteConnection($"Data Source = {filePath}; Version = 3; New = True; Compress = True;");
 
-        #region Creating and connecting to the database
+        #region Creating and connecting to database
         public static void GetDbConnection()
         {
             try
             {
                 connection.Open();
-
                 InsertDataUsers(connection);
-
                 connection.Close();
             }
             catch (SQLiteException ex)

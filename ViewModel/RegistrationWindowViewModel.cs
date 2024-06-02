@@ -65,6 +65,5 @@ namespace LearnCSharp.ViewModel
                 Application.Current.Shutdown();
             }));
         #endregion
-
     }
 }

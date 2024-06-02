@@ -33,10 +33,10 @@
                     <MenuItem Header="Variables and const" 
                               Command="{Binding OpenLect1}"/>
                     
-                    <MenuItem Header="lect #2"
+                    <MenuItem Header="Data types"
                               Command="{Binding OpenLect2}"/>
-                    
-                    <MenuItem Header="Lect #3"
+
+                    <MenuItem Header="Console input and output"
                               Command="{Binding OpenLect3}"/>
                 </MenuItem>
 
